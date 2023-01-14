@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico.ico" type="image/x-icon">   
+    <title>Agenda Telefônica</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo-telefone.png" alt="logo telefone">
+        <h1>Contatos</h1>
+        <p>Guarde bem o que te une aos outros</p>
+    </header>
+    <div class="container">
+        <form class="form-contact">
+
+        <h2>Adicione seu novo contato</h2> 
+        <div class="inputs">
+                
+            <input type="text" required maxlength="36" id="nome-contato" class="nome-contato" autocomplete="name" placeholder=" Nome">
+            
+            <input type="number" required  id="numero-contato" class="numero-contato" autocomplete="tel" placeholder="Telefone" min="1000000" max="100000000000">
+            
+        
+        
+
+            <button type="submit">Adicionar +</button>
+        </div>
+        </form>
+    </div>
+    <table class="tabela-contatos">
+        <thead>
+            <tr>
+                <th>Contatos</th>
+                <th>Telefones</th>
+                <th>favoritos</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
